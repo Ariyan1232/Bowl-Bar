@@ -12,6 +12,10 @@ struct NoodlesSides: View {
     @State private var vibrateOnRing = false
     @State private var vibrateOnRing2 = false
     @State private var vibrateOnRing3 = false
+    @State private var vibrateOnRing4 = false
+    @State private var vibrateOnRing5 = false
+    @State private var vibrateOnRing6 = false
+    @State private var vibrateOnRing7 = false
     var body: some View {
         ScrollView {
             VStack {
@@ -64,7 +68,7 @@ struct NoodlesSides: View {
                         Text("Seaweed")
                             .padding( .leading, 100)
                         
-                        Toggle(isOn: $vibrateOnRing)
+                        Toggle(isOn: $vibrateOnRing3)
                         {
                             
                         }
@@ -81,7 +85,7 @@ struct NoodlesSides: View {
                         Text("Radish")
                             .padding( .leading, 100)
                         
-                        Toggle(isOn: $vibrateOnRing2)
+                        Toggle(isOn: $vibrateOnRing4)
                         {
                             
                         }
@@ -98,7 +102,7 @@ struct NoodlesSides: View {
                         Text("Soft-Boiled Egg")
                             .padding( .leading, 100)
                         
-                        Toggle(isOn: $vibrateOnRing)
+                        Toggle(isOn: $vibrateOnRing5)
                         {
                             
                         }
@@ -115,7 +119,7 @@ struct NoodlesSides: View {
                         Text("Chili Oil")
                             .padding( .leading, 100)
                         
-                        Toggle(isOn: $vibrateOnRing)
+                        Toggle(isOn: $vibrateOnRing6)
                         {
                             
                         }
@@ -132,7 +136,7 @@ struct NoodlesSides: View {
                         Text("Chives")
                             .padding( .leading, 100)
                         
-                        Toggle(isOn: $vibrateOnRing)
+                        Toggle(isOn: $vibrateOnRing7)
                         {
                             
                         }
@@ -140,14 +144,14 @@ struct NoodlesSides: View {
                     }
                     .padding(.top)
                 }
-                NavigationLink(destination: NoodlesSides(), label: {
+                NavigationLink(destination: Drinks(), label: {
                     ZStack {
                         RoundedRectangle(cornerRadius: 10)
                             .fill(.orange)
                             .frame(width: 300, height: 50)
-                            .padding(.top, 100)
                         HStack {
-                            Text("Choose Noodles & Toppings")
+                            Text("Choose Drinks")
+                                .foregroundColor(Color.blue)
                             
                             Image(systemName: "arrow.right")
                         }

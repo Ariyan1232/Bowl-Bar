@@ -13,24 +13,24 @@ struct FrontPage: View {
             NavigationView { // Creates the ability to navigate to different pages on the app
                 VStack { //  Creates a vertical layout
                     Image("BowlBar") // Image
-                        .resizable()
+                        .resizable() //Allows the image to be resized
                         .aspectRatio(contentMode: .fit)
-                        .padding()
+                        .padding() //Spaces the image from its surroundings
                         .frame(width: 200, height: 200, alignment: .top)
                     HStack { // Creates a horizantal layout
                         NavigationLink(destination: OrderPage(), label: { //Makes the destination the file "OrderPage"
-                            VStack {
+                            VStack { //Creates a vertical layout
                                 ZStack { // Creates a stack layout
                                     RoundedRectangle(cornerRadius: 10) //Diplays a rectangle with rounded edges
-                                        .fill(lightGray)
-                                        .frame(width: 50, height: 50)
-                                        .padding()
+                                        .fill(lightGray) //Sets the fill colour for the rectangle
+                                        .frame(width: 50, height: 50) //Sets the frame width and height
+                                        .padding() //Puts spacing around the rectangle
                                     Image(systemName: "fork.knife") // Uses a custom Apple symbol
                                 }
-                                Text("Order")
+                                Text("Order") // Writes text
                             }
                         })
-                        NavigationLink(destination: OrderPage(), label: {
+                        NavigationLink(destination: OrderPage(), label: { //Navigates us to a different page
                             VStack {
                                 ZStack {
                                     RoundedRectangle(cornerRadius: 10)
@@ -68,7 +68,7 @@ struct FrontPage: View {
                         })
                     }
                     
-                    VStack {
+                    VStack { //Vertical Arrangement of text and images
                         Text("News")
                             .font(.title)
                             .padding()

@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @State private var isActive = false //Develops a variable
     @State private var size = 0.8
-    @State private var opacity = 0.5
+    @State private var opacity = 1.0
     
     var body: some View {
         if isActive {
@@ -26,7 +26,7 @@ struct ContentView: View {
             .opacity(opacity)
             .onAppear {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) { //Creates a fade in effect for four seconds
-                    self.isActive = true
+                    self.isActive = true //Guides us to a different page
                 }
             }
         }

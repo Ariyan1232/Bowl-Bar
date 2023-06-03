@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0D874AAE2A1D4A0900A3E22F /* Drinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D874AAD2A1D4A0900A3E22F /* Drinks.swift */; };
 		0D874AB02A1EF03500A3E22F /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D874AAF2A1EF03500A3E22F /* SwiftUIView.swift */; };
+		0D874AB22A24525A00A3E22F /* CompleteOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D874AB12A24525A00A3E22F /* CompleteOrder.swift */; };
 		0DA222082A1B1155004899DC /* NoodlesSides.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA222072A1B1155004899DC /* NoodlesSides.swift */; };
 		0DEC2C402A05697E003FE493 /* AirlineAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEC2C3F2A05697E003FE493 /* AirlineAppApp.swift */; };
 		0DEC2C422A05697E003FE493 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEC2C412A05697E003FE493 /* ContentView.swift */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		0D874AAD2A1D4A0900A3E22F /* Drinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drinks.swift; sourceTree = "<group>"; };
 		0D874AAF2A1EF03500A3E22F /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		0D874AB12A24525A00A3E22F /* CompleteOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteOrder.swift; sourceTree = "<group>"; };
 		0DA222072A1B1155004899DC /* NoodlesSides.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoodlesSides.swift; sourceTree = "<group>"; };
 		0DEC2C3C2A05697E003FE493 /* AirlineApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirlineApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DEC2C3F2A05697E003FE493 /* AirlineAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirlineAppApp.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				0DEC2C3E2A05697E003FE493 /* AirlineApp */,
+				0DEC2C472A05697F003FE493 /* Preview Assets.xcassets */,
 				0DEC2C502A05697F003FE493 /* AirlineAppTests */,
 				0DEC2C5A2A05697F003FE493 /* AirlineAppUITests */,
 				0DEC2C3D2A05697E003FE493 /* Products */,
@@ -119,10 +122,10 @@
 				0DEC2C412A05697E003FE493 /* ContentView.swift */,
 				0DEC2C6A2A0589F2003FE493 /* FrontPage.swift */,
 				0DEC2C6C2A15A696003FE493 /* OrderPage.swift */,
-				0DEC2C472A05697F003FE493 /* Preview Assets.xcassets */,
 				0DA222072A1B1155004899DC /* NoodlesSides.swift */,
 				0D874AAD2A1D4A0900A3E22F /* Drinks.swift */,
 				0D874AAF2A1EF03500A3E22F /* SwiftUIView.swift */,
+				0D874AB12A24525A00A3E22F /* CompleteOrder.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				0D874AAE2A1D4A0900A3E22F /* Drinks.swift in Sources */,
 				0D874AB02A1EF03500A3E22F /* SwiftUIView.swift in Sources */,
 				0DA222082A1B1155004899DC /* NoodlesSides.swift in Sources */,
+				0D874AB22A24525A00A3E22F /* CompleteOrder.swift in Sources */,
 				0DEC2C6B2A0589F2003FE493 /* FrontPage.swift in Sources */,
 				0DEC2C422A05697E003FE493 /* ContentView.swift in Sources */,
 				0DEC2C402A05697E003FE493 /* AirlineAppApp.swift in Sources */,
@@ -435,6 +439,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AirlineApp/Preview Content\"";
+				DEVELOPMENT_TEAM = UYY3K4UX3F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Bowl Bar";
@@ -471,6 +476,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AirlineApp/Preview Content\"";
+				DEVELOPMENT_TEAM = UYY3K4UX3F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Bowl Bar";

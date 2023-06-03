@@ -12,6 +12,7 @@ struct Drinks: View {
     @State private var vibrateOnRing = false
     @State private var vibrateOnRing2 = false
     @State private var vibrateOnRing3 = false
+    @State private var vibrateOnRing4 = false
     var body: some View {
         ScrollView {
             VStack {
@@ -44,7 +45,7 @@ struct Drinks: View {
                         Text("Sprite")
                             .padding( .leading, 100)
                         
-                        Toggle(isOn: $vibrateOnRing)
+                        Toggle(isOn: $vibrateOnRing2)
                         {
                             
                         }
@@ -61,7 +62,7 @@ struct Drinks: View {
                         Text("Fanta")
                             .padding( .leading, 100)
                         
-                        Toggle(isOn: $vibrateOnRing)
+                        Toggle(isOn: $vibrateOnRing3)
                         {
                             
                         }
@@ -78,7 +79,7 @@ struct Drinks: View {
                         Text("Nestea")
                             .padding( .leading, 100)
                         
-                        Toggle(isOn: $vibrateOnRing)
+                        Toggle(isOn: $vibrateOnRing4)
                         {
                             
                         }
@@ -86,6 +87,19 @@ struct Drinks: View {
                     }
                     .padding(.top)
                 }
+                NavigationLink(destination: CompleteOrder(), label: {
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 10)
+                            .fill(.orange)
+                            .frame(width: 300, height: 50)
+                        HStack {
+                            Text("Complete Order")
+                                .foregroundColor(Color.blue)
+                            
+                            Image(systemName: "arrow.right")
+                        }
+                    }
+                })
             }
         }
     }
